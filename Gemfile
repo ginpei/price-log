@@ -48,3 +48,5 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'omniauth'
+gem 'omniauth-twitter'
