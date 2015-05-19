@@ -8,12 +8,22 @@
 </head>
 <body>
   <div class="globalHeader">
-    <div class="globalHeader-sessions">
+    <div class="globalHeader-app"><%= link_to 'PriceTransition', root_path %></div>
+    <div class="globalHeader-info">
       <% if current_user %>
-        Hello <%= current_user.name %>.
-        <%= link_to 'Log out', logout_path %>
+        <div class="globalHeader-info-item globalHeader-menu">
+          <div class="globalHeader-menu-title"><%= current_user.name %></div>
+          <div class="globalHeader-menu-list">
+            <%= link_to 'Log out', logout_path, class: 'globalHeader-menu-item' %>
+          </div>
+        </div>
       <% else %>
-        <%= link_to 'Log in', login_path(:twitter) %>
+        <div class="globalHeader-info-item globalHeader-menu">
+          <div class="globalHeader-menu-title">Log in</div>
+          <div class="globalHeader-menu-list">
+            <%= link_to 'Twitter', login_path(:twitter), class: 'globalHeader-menu-item' %>
+          </div>
+        </div>
       <% end %>
     </div>
   </div>
