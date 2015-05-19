@@ -1,11 +1,15 @@
+$header-height: 20px;
+$background-color: #006;
+$menu-border-color: #99c;
+
 .globalHeader {
-  background-color: #006;
+  background-color: $background-color;
   box-sizing: border-box;
   color: #ccc;
   font-size: 12px;
-  height: 20px;
+  height: $header-height;
   left: 0;
-  line-height: 20px;
+  line-height: $header-height;
   position: absolute;
   top: 0;
   width: 100%;
@@ -34,14 +38,14 @@
 
 .globalHeader-menu {
   display: inline-block;
-  height: 20px;
+  height: $header-height;
   padding: 0 2px;
   position: relative;
   z-index: 1;
 
   &-title,
   &-list {
-    background-color: #006;
+    background-color: $background-color;
   }
   &-title {
     cursor: default;
@@ -58,7 +62,7 @@
     padding-top: 1px;
     position: absolute;
     right: 0;
-    top: 20px;
+    top: $header-height;
     width: auto;
   }
   &-item {
@@ -69,7 +73,7 @@
   &:hover &-title,
   &.hover &-title,
   &-list {
-    border: solid 1px #99c;
+    border: solid 1px $menu-border-color;
   }
   &:hover &-title,
   &.hover &-title {
