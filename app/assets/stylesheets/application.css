@@ -17,31 +17,3 @@
 body {
   padding-top: 2em;
 }
-.globalHeader {
-  background-color: #006;
-  box-sizing: border-box;
-  color: #ccc;
-  font-size: 12px;
-  height: 20px;
-  left: 0;
-  line-height: 20px;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-.globalHeader a {
-  color: #fff;
-}
-.globalHeader-app {
-  color: #fff;
-  float: left;
-  font-weight: bold;
-  margin-left: 1em;
-}
-.globalHeader-info {
-  float: right;
-}
-.globalHeader-info-item {
-  display: inline-block;
-  margin-right: 1em;
-}

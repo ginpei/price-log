@@ -14,7 +14,7 @@ $menu-border-color: #99c;
   top: 0;
   width: 100%;
 
-  a {
+  :link, :visited {
     color: #fff;
     text-decoration: none;
   }
@@ -22,7 +22,6 @@ $menu-border-color: #99c;
     text-decoration: underline;
   }
   &-app {
-    color: #fff;
     float: left;
     font-weight: bold;
     margin-left: 1em;
