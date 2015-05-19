@@ -52,12 +52,13 @@
   }
   &-list {
     box-shadow: 0 3px 5px rgba(0,0,0,0.3);
-    display: none;
+    height: 0;
     min-width: 100%;
+    opacity: 0;
     padding-top: 1px;
     position: absolute;
-    top: 20px;
     right: 0;
+    top: 20px;
     width: auto;
   }
   &-item {
@@ -77,6 +78,8 @@
   }
   &:hover &-list,
   &.hover &-list {
-    display: block;
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.3s;
   }
 }
