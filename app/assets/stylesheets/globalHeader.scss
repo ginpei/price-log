@@ -1,0 +1,88 @@
+$header-height: 20px;
+$background-color: #006;
+$menu-border-color: #99c;
+
+.globalHeader {
+  background-color: $background-color;
+  box-sizing: border-box;
+  color: #ccc;
+  font-size: 12px;
+  height: $header-height;
+  left: 0;
+  line-height: $header-height;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  :link, :visited {
+    color: #fff;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  &-app {
+    float: left;
+    font-weight: bold;
+    margin-left: 1em;
+  }
+  &-info {
+    float: right;
+  }
+  &-info-item {
+    display: inline-block;
+    margin-right: 1em;
+  }
+}
+
+.globalHeader-menu {
+  display: inline-block;
+  height: $header-height;
+  padding: 0 2px;
+  position: relative;
+  z-index: 1;
+
+  &-title,
+  &-list {
+    background-color: $background-color;
+  }
+  &-title {
+    cursor: default;
+    text-align: right;
+    padding: 0 5px;
+    position: relative;
+    z-index: 1;
+  }
+  &-list {
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    height: 0;
+    min-width: 100%;
+    opacity: 0;
+    padding-top: 1px;
+    position: absolute;
+    right: 0;
+    top: $header-height;
+    width: auto;
+  }
+  &-item {
+    display: block;
+    padding: 0.2em 0.5em;
+    white-space: nowrap;
+  }
+  &:hover &-title,
+  &.hover &-title,
+  &-list {
+    border: solid 1px $menu-border-color;
+  }
+  &:hover &-title,
+  &.hover &-title {
+    border-bottom-style: none;
+    padding: 0 4px;
+  }
+  &:hover &-list,
+  &.hover &-list {
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+}

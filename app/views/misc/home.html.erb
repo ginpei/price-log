@@ -1,0 +1,8 @@
+<h1>Misc#home</h1>
+<p>Find me in app/views/misc/home.html.erb</p>
+<% if current_user %>
+  <p>Hello <%= current_user.name %>.</p>
+  <%= link_to 'Log out', logout_path %>
+<% else %>
+  <%= link_to 'Log in', login_path(:twitter) %>
+<% end %>
