@@ -50,3 +50,4 @@ end
 
 gem 'omniauth'
 gem 'omniauth-twitter'
+gem 'dotenv-rails', :groups => [:development, :test]
