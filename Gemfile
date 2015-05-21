@@ -51,3 +51,4 @@ end
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'rails_12factor', group: :production
+gem 'dotenv-rails', groups: [:development, :test]
