@@ -1,7 +1,5 @@
 Rails.application.config.middleware.use OmniAuth::Builder do
-  secrets = Rails.application.secrets
-  p '--------------'
-  p "secrets is #{secrets}"
+  # secrets = Rails.application.secrets
   # provider :twitter, secrets.twitter_key, secrets.twitter_secret
   provider :twitter, 'xxxxxxxxxxxxxxxxxxxxx', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 end
